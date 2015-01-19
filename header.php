@@ -13,8 +13,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
     <link href="css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="styles.css" rel="stylesheet">
+    <!-- Custom styles for this template -->    
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
