@@ -10,8 +10,7 @@
 
     <title>CyA, Controles y Automatización</title>
    
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>   
 
     <!-- Custom styles for this template -->    
 
