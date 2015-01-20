@@ -111,6 +111,14 @@ hr {
 .ultimosPost p {
 	padding-top: 15px;
 }
+.ultimosPost .widget {
+	padding: 0px 0 0 20px;
+}
+
+.ultimosPost img{
+        height:auto;
+        width:100%;
+}
 
 
 @media (min-width: 1217px) {
@@ -123,6 +131,10 @@ hr {
 		line-height: 98px;
 		height: 98px;
 		padding-top: 0;
+	}
+	.proyectos li {
+		display: inline-block;
+		padding-right: 25px;
 	}
 }
 @media (max-width: 1200px) {

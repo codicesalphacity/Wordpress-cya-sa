@@ -6,8 +6,9 @@
 	  <section class="contentPage">
         <div class="row">
             <div class="col-xs-12 col-md-6">
-        			<h1>CONTROLES Y AUTOMATIZACIÓN</h1>
-        			<p>Es una empresa presente en el mercado de la integración de proyectos y servicios para la industria colombiana desde el año 2002. Nuestro selecto grupo de profesionales especializados en diferentes áreas de la ingeniería cuenta con un amplio conocimiento y una excelente experiencia en cada uno de los campos de acción que desarrollamos.</p>
+        			<?php if(have_posts() ): while(have_posts() ): the_post(); ?>
+                <?php the_content(); ?>
+              <?php endwhile; endif; ?>
             </div>
             <div class="col-xs-12 col-md-6">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -59,68 +60,32 @@
             </div>
         </div>
         <div class="visible-lg banner">
-          <img src="img/banner.png">
+          <?php if (dynamic_sidebar('principal-medio')); {  } ?>
         </div>
 	   </section>
      <section class="lineas">
         <div class="row">
           <div class="col-xs-12 col-md-4">
             <div class="cuadrosBlancos">
-              <span class="fa fa fa-suitcase fa-5x"></span>
-              <h4>LÍNEAS DE TRABAJO</h3>
-              <p>
-                Nuestro oferta de valor abarca distintas áreas de la ingeniería eléctrica y electrónica, donde aplicamos tecnología de punta para solucionar las necesidades de nuestros clientes.
-              </p>
+              <?php if (dynamic_sidebar('principal-izquierda')); {  } ?>
             </div>
           </div>
           <div class="col-xs-12 col-md-4">
             <div class="cuadrosBlancos">
-              <span class="fa fa fa-cubes fa-5x"></span>
-              <h4>Proyectos:</h3>
-              <p>
-                Desarrollamos proyectos con filosofía PMI, asegurando una correcta planeación y ejecución en cualquier etapa de los mismos.
-              </p>
+              <?php if (dynamic_sidebar('principal-centro')); {  } ?>
             </div>
           </div>
           <div class="col-xs-12 col-md-4">
             <div class="cuadrosBlancos">
-              <span class="fa fa fa-cogs fa-5x"></span>
-              <h4>SERVICIOS</h3>
-              <p>
-                Garantizamos la continuidad de sus procesos, minimizando errores, pérdidas, paradas, accidentes y en general cualquier evento de falla que vaya en contra del correcto funcionamiento de los sistemas que apuntalan su core de negocios.
-              </p>
+              <?php if (dynamic_sidebar('principal-derecha')); {  } ?>
             </div>
           </div>
         </div>
         <hr>
      </section>
 	 <section class="ultimosPost">
-		<h4>Proyectos ejecutados:</h4>
 		<div class="row">
-			<div class="col-xs-12 col-md-3">
-				<div class="post">
-					<img src="http://placehold.it/550x350" class="img-thumbnail img-responsive">
-					<p><strong>Coca Cola Latinoamérica</strong></p>
-				</div>
-			</div>
-			<div class="col-xs-12 col-md-3">
-				<div class="post">
-					<img src="http://placehold.it/550x350" class="img-thumbnail img-responsive">
-					<p><strong>Colegio Rochester</strong></p>
-				</div>
-			</div>
-			<div class="col-xs-12 col-md-3">
-				<div class="post">
-					<img src="http://placehold.it/550x350" class="img-thumbnail img-responsive">
-					<p><strong>Sala de audiencia CSJ</strong></p>
-				</div>
-			</div>
-			<div class="col-xs-12 col-md-3">
-				<div class="post">
-					<img src="http://placehold.it/550x350" class="img-thumbnail img-responsive">
-					<p><strong>Superintendencia de Sociedades</strong></p>
-				</div>
-			</div>	
+			<?php if (dynamic_sidebar('principal-abajo')); {  } ?>
 		</div>
 	 </section>
 	 <?php get_footer(); ?>
