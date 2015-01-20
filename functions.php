@@ -1,4 +1,5 @@
 <?php
+	require_once('wp_bootstrap_navwalker.php');
 
 	function estilos_temas(){
 
@@ -21,6 +22,12 @@
 
 		wp_enqueue_script('bootstrap_js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'),'',true);
 	}
+
+	register_nav_menus( array(
+    	'primary' => __( 'Primary Menu', 'Wordpress-cya-sa' ),
+	) );
+
 	add_action('wp_enqueue_scripts','temas_js');
+	/* add_filter('show_admin_bar',_return_false); */ /* Apagar barra de Wordpress*/
 
 ?>
